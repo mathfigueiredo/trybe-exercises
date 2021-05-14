@@ -1,0 +1,48 @@
+h1,
+p {
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  padding: 5px;
+}
+
+li a {
+  text-decoration: none;
+  padding: 5px;
+}
+
+li a:link,
+li a:visited {
+  color: black;
+  text-transform: uppercase;
+}
+
+li a:hover,
+li a:active {
+  color: white;
+}
+
+li a:active {
+  font-family: sans-serif;
+}
+
+.ytb:hover,
+.ytb:active {
+  background-color: red;
+}
+
+.ggl:hover,
+.ggl:active {
+  background-color: orange;
+}
+
+.udm:hover,
+.udm:active {
+  background-color: black;
+}
