@@ -1,0 +1,38 @@
+.body {
+  font-size: 16px;
+}
+
+.word {
+  display: inline-block;
+  vertical-align: top;
+  transform: translate(83%, -130%);
+  z-index: 1;
+  position: absolute;
+}
+
+.super-mario {
+  display: block;
+  height: 10rem;
+}
+
+.goomba {
+  height: 10rem;
+  float: left;
+}
+
+.baloon {
+  height: 5rem;
+  width: 12rem;
+  vertical-align: top;
+  position: absolute;
+  left: 15rem;
+  transform: translate(0, -40%);
+}
+
+.bowser {
+  height: 10rem;
+  z-index: 5;
+  position: absolute;
+  display: inline-block;
+  left: 27rem;
+}
