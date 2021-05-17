@@ -17,6 +17,8 @@ table {
 }
 
 .mbold {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .strong {
 }
