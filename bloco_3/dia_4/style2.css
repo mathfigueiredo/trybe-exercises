@@ -16,9 +16,11 @@ table {
   width: 40rem;
 }
 
+span {
+  font-weight: bold;
+}
 .mbold {
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .red {
