@@ -29,7 +29,11 @@ table {
   margin: 0 auto;
 }
 
-
+img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100rem;
+}
 
 span {
   font-weight: bold;
