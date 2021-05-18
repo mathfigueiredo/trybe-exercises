@@ -6,6 +6,18 @@ body {
   font-size: 2rem;
 }
 
+h1 {
+  text-align: center;
+}
+
+main {
+}
+
+.heading--secondary--text,
+.table--heading--text {
+  text-align: center;
+}
+
 th,
 td,
 table {
@@ -14,7 +26,10 @@ table {
   text-align: center;
   font-size: 1.8rem;
   width: 40rem;
+  margin: 0 auto;
 }
+
+
 
 span {
   font-weight: bold;
