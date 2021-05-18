@@ -61,19 +61,17 @@ table {
 }
 
 section.articles {
+  background-color: rgb(211, 211, 211);
   display: table;
   margin: 0 auto;
-  min-width: 128rem;
 }
 
 article {
   display: inline-block;
-
   width: 25rem;
   height: 45rem;
   vertical-align: top;
   text-align: justify;
-
   margin: 1rem;
 }
 
@@ -145,12 +143,16 @@ span {
 }
 
 aside {
-  float: right;
-  background-color: blue;
+  position: fixed;
+  right: 0;
 }
 
 footer {
   text-align: center;
   background-color: #777;
   padding: 3rem 0;
+}
+
+iframe {
+  width: 26.1rem;
 }
