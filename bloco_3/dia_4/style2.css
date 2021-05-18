@@ -8,6 +8,17 @@ html {
   min-width: 141.5rem;
 }
 
+header {
+  height: 30rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(img/stom.jpg);
+  background-size: cover;
+}
+
 body {
   font-size: 1.8rem;
 }
@@ -46,7 +57,11 @@ nav ul li a:active {
 }
 
 h1 {
-  text-align: center;
+  display: inline-block;
+  left: 27rem;
+  top: 14rem;
+  position: absolute;
+  color: rgb(187, 94, 8);
 }
 
 h2 {
@@ -64,6 +79,7 @@ main {
 .heading--secondary--text,
 .table--heading--text {
   text-align: center;
+  margin-top: 3rem;
 }
 
 th,
@@ -126,6 +142,8 @@ span {
 
 .ref--heading {
   text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .ref--sites,
@@ -162,12 +180,14 @@ span {
 aside {
   position: fixed;
   right: 0;
+  top: 30rem;
 }
 
 footer {
   text-align: center;
   background-color: #777;
   padding: 3rem 0;
+  margin-top: 3rem;
 }
 
 iframe {
