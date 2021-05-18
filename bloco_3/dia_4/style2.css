@@ -28,6 +28,7 @@ h1 {
 
 main {
   min-width: 130rem;
+  float: left;
 }
 
 .heading--secondary--text,
@@ -122,4 +123,13 @@ span {
 
 .ref--text {
   text-align: center;
+}
+
+aside {
+  float: right;
+  background-color: blue;
+}
+
+footer {
+  clear: both;
 }
