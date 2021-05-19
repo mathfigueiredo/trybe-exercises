@@ -1,0 +1,61 @@
+html {
+  font-size: 10px;
+  color: rgb(35, 36, 36);
+  line-height: 2rem;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+  font-size: 1.5rem;
+}
+
+#cabecalho {
+  background-color: yellow;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+}
+
+#minha_foto {
+  width: 25rem;
+}
+
+.image {
+  margin-top: 5rem;
+}
+
+.licoes {
+  margin: 2rem;
+}
+
+table,
+td,
+th,
+tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  width: 25rem;
+}
+
+ul {
+  padding: 1rem;
+  margin: 3rem;
+}
+
+#artigo,
+#aprendizado {
+  display: inline-block;
+  width: 30%;
+  text-align: justify;
+}
+
+#aprendizado {
+  vertical-align: top;
+  margin-left: 2rem;
+}
