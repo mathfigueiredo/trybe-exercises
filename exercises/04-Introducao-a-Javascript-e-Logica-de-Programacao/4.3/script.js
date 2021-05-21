@@ -47,3 +47,20 @@ if (n % 2 !== 0) {
     console.log(str);
   }
 } else console.log(`Insira um número Ímpar`);
+
+// BONUS
+console.log(`BONUS =====`);
+if (n % 2 !== 0) {
+  for (let i = 1; i <= (n + 1) / 2; i++) {
+    let str = '';
+    const askNum = i * 2 - 1;
+    const spaceNumEach = (n - askNum) / 2;
+    for (let j = 1; j <= n; j++) {
+      if (i !== (n + 1) / 2) {
+        if (j === spaceNumEach + 1 || j === spaceNumEach + askNum) str += '*';
+        else str += ' ';
+      } else str += '*';
+    }
+    console.log(str);
+  }
+} else console.log(`Insira um número Ímpar`);
