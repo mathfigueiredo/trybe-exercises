@@ -103,17 +103,16 @@ console.log(`\n`);
 
 console.log(`BONUS ---`);
 console.log(`Crescente:`);
-const numbersCres = numbers.sort((a, b) => a - b);
+const numbersCres = [...numbers].sort((a, b) => a - b);
 console.log(numbersCres);
 console.log(`\n`);
 
 console.log(`Decrescente:`);
-const numbersDec = numbers.sort((a, b) => b - a);
+const numbersDec = [...numbers].sort((a, b) => b - a);
 console.log(numbersDec);
 console.log(`\n`);
 
 console.log(`Novo Array:`);
-numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 const bonusArr = [];
 for (let i = 0; i < numbers.length; i++) {
   if (i !== numbers.length - 1) bonusArr.push(numbers[i] * numbers[i + 1]);
