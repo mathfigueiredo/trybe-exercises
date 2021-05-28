@@ -1,0 +1,32 @@
+* {
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+#paiDoPai {
+  border: 1px solid black;
+  color: #fff;
+  background-color: black;
+}
+
+#pai {
+  background-color: #666;
+}
+
+#pai * {
+  background-color: yellow;
+  color: black;
+}
+
+#pai * * {
+  background-color: rgb(233, 233, 227);
+  color: black;
+}
+
+#pai * * * {
+  background-color: #fff;
+}
+
+#elementoOndeVoceEsta {
+  background-color: yellow;
+}
