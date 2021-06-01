@@ -147,3 +147,27 @@ document.querySelector('#days').addEventListener('click', function () {
     }
   }
 });
+
+document.querySelector('#btn-add').addEventListener('click', function () {
+  if (document.querySelector('#task-input').value === '') {
+    alert('NENHUM COMPROMISSO ADICIONADO');
+  } else {
+    let compromisso = document.createElement('p');
+    compromisso.innerText = document.querySelector('#task-input').value;
+    document.getElementsByClassName('input-container')[0].appendChild(compromisso);
+    document.querySelector('#task-input').value = '';
+  }
+});
+
+document.querySelector('#task-input').addEventListener('keydown', function () {
+  if (event.keyCode === 13) {
+    if (document.querySelector('#task-input').value === '') {
+      alert('NENHUM COMPROMISSO ADICIONADO');
+    } else {
+      let compromisso = document.createElement('p');
+      compromisso.innerText = document.querySelector('#task-input').value;
+      document.getElementsByClassName('input-container')[0].appendChild(compromisso);
+      document.querySelector('#task-input').value = '';
+    }
+  }
+});
