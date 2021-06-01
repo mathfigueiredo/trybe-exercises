@@ -33,6 +33,10 @@ divRightContent.classList.add('right-content');
 document.getElementsByClassName('main-content')[0].appendChild(divRightContent);
 
 // 7
+let imgem = document.createElement('img');
+imgem.src = 'https://picsum.photos/200';
+imgem.classList.add('small-image');
+document.getElementsByClassName('left-content')[0].appendChild(imgem);
 
 // 8
 
