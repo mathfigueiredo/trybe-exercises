@@ -124,10 +124,26 @@ function addLeg(cor) {
 
 addLeg('green');
 
+let bgSelected = 'none';
+
 document.querySelectorAll('.task')[0].addEventListener('click', function () {
   if (event.target.className === 'task') {
     event.target.className = 'task selected';
+    bgSelected = event.target.style.backgroundColor;
   } else {
     event.target.className = 'task';
+    bgSelected = 'none';
+  }
+});
+
+document.querySelector('#days').addEventListener('click', function () {
+  if (bgSelected !== 'none') {
+    event.target.style.backgroundColor = bgSelected;
+    bgSelected = 'none';
+    document.querySelectorAll('.task')[0].className = 'task';
+  } else {
+    if (event.target.style.backgroundColor !== 'none') {
+      event.target.style.backgroundColor = '#eee';
+    }
   }
 });
