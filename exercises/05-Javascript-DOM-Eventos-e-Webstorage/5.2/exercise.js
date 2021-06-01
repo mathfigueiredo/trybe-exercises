@@ -16,7 +16,11 @@ divCenterContent.className = 'center-content';
 document
   .getElementsByClassName('main-content')[0]
   .appendChild(divCenterContent);
+
 // 4
+let paragraph = document.createElement('p');
+paragraph.innerText = 'This is a Paragraph';
+document.getElementsByClassName('center-content')[0].appendChild(paragraph);
 
 // 5
 
