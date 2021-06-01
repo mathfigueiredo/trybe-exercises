@@ -93,6 +93,7 @@ h32.classList.add('description');
 h33.classList.add('description');
 
 // BONUS 3
+document.getElementsByClassName('main-content')[0].removeChild(divLeftContent);
 
 // BONUS 4
 
