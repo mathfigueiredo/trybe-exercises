@@ -11,7 +11,11 @@ divMainContent.className = 'main-content';
 document.body.appendChild(divMainContent);
 
 // 3
-
+let divCenterContent = document.createElement('div');
+divCenterContent.className = 'center-content';
+document
+  .getElementsByClassName('main-content')[0]
+  .appendChild(divCenterContent);
 // 4
 
 // 5
