@@ -121,3 +121,5 @@ function addLeg(cor) {
   div.style.backgroundColor = cor;
   document.getElementsByClassName('my-tasks')[0].appendChild(div);
 }
+
+addLeg('green');
