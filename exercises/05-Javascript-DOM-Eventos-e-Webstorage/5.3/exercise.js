@@ -106,3 +106,13 @@ document.querySelector('#days').addEventListener('mouseout', function () {
   event.target.style.transition = 'all .2s';
   event.target.style.fontSize = '20px';
 });
+
+function addtask(string) {
+  let task = document.createElement('span');
+  task.innerText = string;
+  document.getElementsByClassName('my-tasks')[0].appendChild(task);
+}
+
+addtask('cozinhar');
+
+
