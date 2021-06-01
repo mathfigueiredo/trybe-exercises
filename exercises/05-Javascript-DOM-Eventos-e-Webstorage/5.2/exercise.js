@@ -96,6 +96,7 @@ h33.classList.add('description');
 document.getElementsByClassName('main-content')[0].removeChild(divLeftContent);
 
 // BONUS 4
+divRightContent.style.margin = '0 auto';
 
 // BONUS 5
 
