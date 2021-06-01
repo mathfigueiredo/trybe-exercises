@@ -115,4 +115,9 @@ function addtask(string) {
 
 addtask('cozinhar');
 
-
+function addLeg(cor) {
+  let div = document.createElement('div');
+  div.className = 'task';
+  div.style.backgroundColor = cor;
+  document.getElementsByClassName('my-tasks')[0].appendChild(div);
+}
