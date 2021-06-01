@@ -54,3 +54,7 @@ for (let i = 0; i < document.querySelectorAll('.day').length; i++) {
   }
 }
 
+let btnHoliday = document.createElement('button');
+btnHoliday.id = 'btn-holiday';
+btnHoliday.innerText = 'Feriados';
+document.getElementsByClassName('buttons-container')[0].appendChild(btnHoliday);
