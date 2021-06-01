@@ -58,3 +58,21 @@ let btnHoliday = document.createElement('button');
 btnHoliday.id = 'btn-holiday';
 btnHoliday.innerText = 'Feriados';
 document.getElementsByClassName('buttons-container')[0].appendChild(btnHoliday);
+
+let interruptHoliday = 0;
+
+btnHoliday.addEventListener('click', function () {
+  if (interruptHoliday === 0) {
+    for (let i = 0; i < document.querySelectorAll('.holiday').length; i++) {
+      document.querySelectorAll('.holiday')[i].style.backgroundColor = 'yellow';
+    }
+    interruptHoliday = 1;
+    console.log(interruptHoliday);
+  } else {
+    for (let i = 0; i < document.querySelectorAll('.holiday').length; i++) {
+      document.querySelectorAll('.holiday')[i].style.backgroundColor = '#eee';
+    }
+    interruptHoliday = 0;
+    console.log(interruptHoliday);
+  }
+});
