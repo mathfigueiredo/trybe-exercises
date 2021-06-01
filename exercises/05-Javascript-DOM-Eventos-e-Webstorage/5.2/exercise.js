@@ -102,3 +102,5 @@ divRightContent.style.margin = '0 auto';
 divCenterContent.style.backgroundColor = 'green';
 
 // BONUS 6
+document.getElementsByClassName('ul-main')[0].removeChild(li9);
+document.getElementsByClassName('ul-main')[0].removeChild(li10);
