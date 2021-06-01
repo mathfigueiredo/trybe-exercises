@@ -76,3 +76,8 @@ btnHoliday.addEventListener('click', function () {
     console.log(interruptHoliday);
   }
 });
+
+let btnFriday = document.createElement('button');
+btnFriday.id = 'btn-friday';
+btnFriday.innerText = 'Friday';
+document.getElementsByClassName('buttons-container')[0].appendChild(btnFriday);
