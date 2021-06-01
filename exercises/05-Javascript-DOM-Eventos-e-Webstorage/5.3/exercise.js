@@ -123,3 +123,11 @@ function addLeg(cor) {
 }
 
 addLeg('green');
+
+document.querySelectorAll('.task')[0].addEventListener('click', function () {
+  if (event.target.className === 'task') {
+    event.target.className = 'task selected';
+  } else {
+    event.target.className = 'task';
+  }
+});
