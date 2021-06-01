@@ -86,7 +86,11 @@ document.getElementsByClassName('main-content')[0].appendChild(h33);
 
 // BONUS 1
 h1.classList.add('title');
+
 // BONUS 2
+h31.classList.add('description');
+h32.classList.add('description');
+h33.classList.add('description');
 
 // BONUS 3
 
