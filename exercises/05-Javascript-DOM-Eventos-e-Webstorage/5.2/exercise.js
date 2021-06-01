@@ -99,5 +99,6 @@ document.getElementsByClassName('main-content')[0].removeChild(divLeftContent);
 divRightContent.style.margin = '0 auto';
 
 // BONUS 5
+divCenterContent.style.backgroundColor = 'green';
 
 // BONUS 6
