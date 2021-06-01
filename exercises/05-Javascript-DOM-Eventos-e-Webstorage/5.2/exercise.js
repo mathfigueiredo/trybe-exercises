@@ -23,6 +23,9 @@ paragraph.innerText = 'This is a Paragraph';
 document.getElementsByClassName('center-content')[0].appendChild(paragraph);
 
 // 5
+let divLeftContent = document.createElement('div');
+divLeftContent.classList.add('left-content');
+document.getElementsByClassName('main-content')[0].appendChild(divLeftContent);
 
 // 6
 
