@@ -96,3 +96,13 @@ btnFriday.addEventListener('click', function () {
     interruptFriday = 0;
   }
 });
+
+document.querySelector('#days').addEventListener('mouseover', function () {
+  event.target.style.transition = 'all .2s';
+  event.target.style.fontSize = '30px';
+});
+
+document.querySelector('#days').addEventListener('mouseout', function () {
+  event.target.style.transition = 'all .2s';
+  event.target.style.fontSize = '20px';
+});
