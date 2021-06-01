@@ -67,13 +67,11 @@ btnHoliday.addEventListener('click', function () {
       document.querySelectorAll('.holiday')[i].style.backgroundColor = 'yellow';
     }
     interruptHoliday = 1;
-    console.log(interruptHoliday);
   } else {
     for (let i = 0; i < document.querySelectorAll('.holiday').length; i++) {
       document.querySelectorAll('.holiday')[i].style.backgroundColor = '#eee';
     }
     interruptHoliday = 0;
-    console.log(interruptHoliday);
   }
 });
 
@@ -81,3 +79,20 @@ let btnFriday = document.createElement('button');
 btnFriday.id = 'btn-friday';
 btnFriday.innerText = 'Friday';
 document.getElementsByClassName('buttons-container')[0].appendChild(btnFriday);
+
+let fridayArr = [4, 11, 18, 25];
+let interruptFriday;
+
+btnFriday.addEventListener('click', function () {
+  if (interruptFriday === 0) {
+    for (let i = 0; i < document.querySelectorAll('.friday').length; i++) {
+      document.querySelectorAll('.friday')[i].innerText = 'TGIF!!!';
+    }
+    interruptFriday = 1;
+  } else {
+    for (let i = 0; i < document.querySelectorAll('.friday').length; i++) {
+      document.querySelectorAll('.friday')[i].innerText = fridayArr[i];
+    }
+    interruptFriday = 0;
+  }
+});
