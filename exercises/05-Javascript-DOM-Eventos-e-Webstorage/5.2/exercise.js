@@ -76,3 +76,22 @@ document.getElementsByClassName('ul-main')[0].appendChild(li9);
 document.getElementsByClassName('ul-main')[0].appendChild(li10);
 
 // 9
+let h31 = document.createElement('h3');
+let h32 = document.createElement('h3');
+let h33 = document.createElement('h3');
+
+document.getElementsByClassName('main-content')[0].appendChild(h31);
+document.getElementsByClassName('main-content')[0].appendChild(h32);
+document.getElementsByClassName('main-content')[0].appendChild(h33);
+
+// BONUS 1
+h1.classList.add('title');
+// BONUS 2
+
+// BONUS 3
+
+// BONUS 4
+
+// BONUS 5
+
+// BONUS 6
