@@ -39,5 +39,40 @@ imgem.classList.add('small-image');
 document.getElementsByClassName('left-content')[0].appendChild(imgem);
 
 // 8
+let ul = document.createElement('ul');
+ul.classList.add('ul-main');
+document.getElementsByClassName('right-content')[0].appendChild(ul);
+
+let li1 = document.createElement('li');
+li1.innerText = 'um';
+let li2 = document.createElement('li');
+li2.innerText = 'dois';
+let li3 = document.createElement('li');
+li3.innerText = 'três';
+let li4 = document.createElement('li');
+li4.innerText = 'quatro';
+let li5 = document.createElement('li');
+li5.innerText = 'cinco';
+let li6 = document.createElement('li');
+li6.innerText = 'seis';
+let li7 = document.createElement('li');
+li7.innerText = 'sete';
+let li8 = document.createElement('li');
+li8.innerText = 'oito';
+let li9 = document.createElement('li');
+li9.innerText = 'nove';
+let li10 = document.createElement('li');
+li10.innerText = 'dez';
+
+document.getElementsByClassName('ul-main')[0].appendChild(li1);
+document.getElementsByClassName('ul-main')[0].appendChild(li2);
+document.getElementsByClassName('ul-main')[0].appendChild(li3);
+document.getElementsByClassName('ul-main')[0].appendChild(li4);
+document.getElementsByClassName('ul-main')[0].appendChild(li5);
+document.getElementsByClassName('ul-main')[0].appendChild(li6);
+document.getElementsByClassName('ul-main')[0].appendChild(li7);
+document.getElementsByClassName('ul-main')[0].appendChild(li8);
+document.getElementsByClassName('ul-main')[0].appendChild(li9);
+document.getElementsByClassName('ul-main')[0].appendChild(li10);
 
 // 9
