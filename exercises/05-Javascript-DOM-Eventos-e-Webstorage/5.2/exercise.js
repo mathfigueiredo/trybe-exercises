@@ -28,6 +28,9 @@ divLeftContent.classList.add('left-content');
 document.getElementsByClassName('main-content')[0].appendChild(divLeftContent);
 
 // 6
+let divRightContent = document.createElement('div');
+divRightContent.classList.add('right-content');
+document.getElementsByClassName('main-content')[0].appendChild(divRightContent);
 
 // 7
 
