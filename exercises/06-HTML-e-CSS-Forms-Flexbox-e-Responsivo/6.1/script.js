@@ -15,6 +15,9 @@ const jobDescription = document.getElementById('input-job-description');
 const startDate = document.getElementById('input-start-date');
 const btnSubmit = document.getElementById('btn-submit');
 
+const div = document.createElement('div');
+div.id = 'div-result';
+
 // States input
 const selectState = document.getElementById('input-state');
 const states = [
@@ -66,12 +69,23 @@ function checkName() {
   }
 }
 
+function checkEmail() {
+  if (email.value.length > 0 && email.value.length <= 50) return true;
+  else {
+    const p = document.createElement('p');
+    p.innerText = 'O campo EMAIL é obrigatório e deve conter até 50 caracteres';
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
+    return false;
+  }
+}
+
 // EventListeners
 btnSubmit.addEventListener('click', function (e) {
   e.preventDefault();
 
-  const div = document.createElement('div');
-  div.id = 'div-result';
   document.body.appendChild(div);
-
+  div.innerHTML = '';
+  checkName();
+  checkEmail();
 });
