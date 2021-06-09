@@ -54,10 +54,23 @@
           <textarea name="resume" id="input-resume" cols="30" rows="10" maxlength="1000" required></textarea>
         </label>
 
-        <label for="input-job-position">Cargo:
-          <input type="text" id="job-position" maxlength="40" required></input>
+        <label for="input-job-position"
+          >Cargo:
+          <input type="text" name="job-position" id="input-job-position" maxlength="40" required />
+        </label>
+
+        <label for="input-job-description"
+          >Descrição do cargo:
+          <input type="text" name="job-description" id="input-job-description" maxlength="500" required />
+        </label>
+
+        <label for="input-start-date"
+          >Data de início:
+          <input type="text" name="start-date" id="input-start-date" placeholder="dd/mm/aaaa" required />
         </label>
       </fieldset>
+
+      <button type="submit" id="btn-submit">Enviar</button>
     </form>
 
     <script src="script.js"></script>
