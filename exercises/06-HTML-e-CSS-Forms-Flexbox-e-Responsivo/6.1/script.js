@@ -136,6 +136,57 @@ function checkJobPosition() {
   }
 }
 
+function checkSlash() {
+  if (startDate.value[2] === '/' && startDate.value[5] === '/' && startDate.value.length === 10) return true;
+  else {
+    const p = document.createElement('p');
+    p.innerHTML = '<span>&times;</span>&nbsp;O formato da <b>DATA DE INÍCIO</b> deve ser <b>dd/mm/aaaa</b>';
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
+    return false;
+  }
+}
+
+function checkDateDay() {
+  if (Number(startDate.value[0] + startDate.value[1]) > 0 && Number(startDate.value[0] + startDate.value[1]) <= 31)
+    return true;
+  else {
+    const p = document.createElement('p');
+    p.innerHTML = '<span>&times;</span>&nbsp;O <b>DIA</b> da DATA DE INÍCIO deve ser <b>entre 1 e 31</b>';
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
+  }
+}
+
+function checkDateMonth() {
+  if (Number(startDate.value[3] + startDate.value[4]) > 0 && Number(startDate.value[3] + startDate.value[4]) <= 12)
+    return true;
+  else {
+    const p = document.createElement('p');
+    p.innerHTML = '<span>&times;</span>&nbsp;O <b>MÊS</b> da DATA DE INÍCIO deve ser <b>entre 1 e 12</b>';
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
+  }
+}
+
+function checkDateYear() {
+  if (Number(startDate.value[6] + startDate.value[7] + startDate.value[8] + startDate.value[9]) >= 0) return true;
+  else {
+    const p = document.createElement('p');
+    p.innerHTML = '<span>&times;</span>&nbsp;O <b>ANO</b> da DATA DE INÍCIO não pode ser negativo';
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
+  }
+}
+
+function checkStartDate() {
+  if (checkSlash() === true) {
+    checkDateDay();
+    checkDateMonth();
+    checkDateYear();
+  }
+}
+
 // EventListeners
 btnSubmit.addEventListener('click', function (e) {
   e.preventDefault();
@@ -149,4 +200,5 @@ btnSubmit.addEventListener('click', function (e) {
   checkRadio();
   checkResume();
   checkJobPosition();
+  checkStartDate();
 });
