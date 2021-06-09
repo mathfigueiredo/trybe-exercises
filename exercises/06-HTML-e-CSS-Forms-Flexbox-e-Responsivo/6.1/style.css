@@ -3,6 +3,10 @@ input {
   margin-bottom: 10px;
 }
 
+textarea {
+  display: block;
+}
+
 #input-tipo-casa,
 #input-tipo-apartamento {
   display: inline;
