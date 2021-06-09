@@ -67,7 +67,8 @@ function checkName() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O campo <b>NOME</b> é obrigatório e deve conter até 40 caracteres';
+    p.innerHTML =
+      '<span class ="red">&times;</span>&nbsp;O campo <b>NOME</b> é obrigatório e deve conter até 40 caracteres';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -79,7 +80,8 @@ function checkEmail() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O campo <b>EMAIL</b> é obrigatório e deve conter até 50 caracteres';
+    p.innerHTML =
+      '<span class ="red">&times;</span>&nbsp;O campo <b>EMAIL</b> é obrigatório e deve conter até 50 caracteres';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -91,7 +93,8 @@ function checkCity() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O campo <b>CIDADE</b> é obrigatório e deve conter até 28 caracteres';
+    p.innerHTML =
+      '<span class ="red">&times;</span>&nbsp;O campo <b>CIDADE</b> é obrigatório e deve conter até 28 caracteres';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -103,7 +106,8 @@ function checkRadio() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;Você deve marcar o <b>TIPO</b> de sua residência (Casa ou Apartamento)';
+    p.innerHTML =
+      '<span class ="red">&times;</span>&nbsp;Você deve marcar o <b>TIPO</b> de sua residência (Casa ou Apartamento)';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -115,7 +119,8 @@ function checkResume() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O campo <b>RESUME</b> é obrigatório e deve conter até 1000 caracteres';
+    p.innerHTML =
+      '<span class ="red">&times;</span>&nbsp;O campo <b>RESUME</b> é obrigatório e deve conter até 1000 caracteres';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -127,7 +132,8 @@ function checkJobPosition() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O campo <b>CARGO</b> é obrigatório e deve conter até 40 caracteres';
+    p.innerHTML =
+      '<span class ="red">&times;</span>&nbsp;O campo <b>CARGO</b> é obrigatório e deve conter até 40 caracteres';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -140,7 +146,7 @@ function checkJobPosition() {
   } else {
     const p = document.createElement('p');
     p.innerHTML =
-      '<span>&times;</span>&nbsp;O campo <b>DESCRIÇÃO DO CARGO</b> é obrigatório e deve conter até 500 caracteres';
+      '<span class ="red">&times;</span>&nbsp;O campo <b>DESCRIÇÃO DO CARGO</b> é obrigatório e deve conter até 500 caracteres';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -152,7 +158,8 @@ function checkSlash() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O formato da <b>DATA DE INÍCIO</b> deve ser <b>dd/mm/aaaa</b>';
+    p.innerHTML =
+      '<span class ="red">&times;</span>&nbsp;O formato da <b>DATA DE INÍCIO</b> deve ser <b>dd/mm/aaaa</b>';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
     return false;
@@ -164,7 +171,7 @@ function checkDateDay() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O <b>DIA</b> da DATA DE INÍCIO deve ser <b>entre 1 e 31</b>';
+    p.innerHTML = '<span class ="red">&times;</span>&nbsp;O <b>DIA</b> da DATA DE INÍCIO deve ser <b>entre 1 e 31</b>';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
   }
@@ -175,7 +182,7 @@ function checkDateMonth() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O <b>MÊS</b> da DATA DE INÍCIO deve ser <b>entre 1 e 12</b>';
+    p.innerHTML = '<span class ="red">&times;</span>&nbsp;O <b>MÊS</b> da DATA DE INÍCIO deve ser <b>entre 1 e 12</b>';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
   }
@@ -186,7 +193,7 @@ function checkDateYear() {
     return true;
   } else {
     const p = document.createElement('p');
-    p.innerHTML = '<span>&times;</span>&nbsp;O <b>ANO</b> da DATA DE INÍCIO não pode ser negativo';
+    p.innerHTML = '<span class ="red">&times;</span>&nbsp;O <b>ANO</b> da DATA DE INÍCIO não pode ser negativo';
     const divResult = document.getElementById('div-result');
     divResult.appendChild(p);
   }
