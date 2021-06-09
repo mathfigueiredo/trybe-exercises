@@ -55,9 +55,23 @@ for (let i = 0; i < states.length; i++) {
 }
 
 // Functions
+function checkName() {
+  if (name.value.length > 0 && name.value.length <= 40) return true;
+  else {
+    const p = document.createElement('p');
+    p.innerText = 'O campo NOME é obrigatório e deve conter até 40 caracteres';
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
+    return false;
+  }
+}
 
 // EventListeners
 btnSubmit.addEventListener('click', function (e) {
   e.preventDefault();
-  console.log(name.value);
+
+  const div = document.createElement('div');
+  div.id = 'div-result';
+  document.body.appendChild(div);
+
 });
