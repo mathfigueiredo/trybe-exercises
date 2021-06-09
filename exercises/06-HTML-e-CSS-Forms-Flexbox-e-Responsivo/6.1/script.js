@@ -14,6 +14,7 @@ const jobPosition = document.getElementById('input-job-position');
 const jobDescription = document.getElementById('input-job-description');
 const startDate = document.getElementById('input-start-date');
 const btnSubmit = document.getElementById('btn-submit');
+const btnClean = document.getElementById('btn-clean');
 
 const div = document.createElement('div');
 div.id = 'div-result';
@@ -77,6 +78,10 @@ function checkName() {
 
 function checkEmail() {
   if (email.value.length > 0 && email.value.length <= 50) {
+    const p = document.createElement('p');
+    p.innerHTML = `<span class ="green">&check;</span>&nbsp;<b>EMAIL:</b> ${email.value}`;
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
     return true;
   } else {
     const p = document.createElement('p');
@@ -90,6 +95,10 @@ function checkEmail() {
 
 function checkCity() {
   if (city.value.length > 0 && city.value.length <= 28) {
+    const p = document.createElement('p');
+    p.innerHTML = `<span class ="green">&check;</span>&nbsp;<b>CIDADE:</b> ${city.value}`;
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
     return true;
   } else {
     const p = document.createElement('p');
@@ -103,6 +112,13 @@ function checkCity() {
 
 function checkRadio() {
   if (tipoCasa.checked || tipoApartamento.checked) {
+    let tipoRadio;
+    if (tipoCasa.checked) tipoRadio = 'Casa';
+    else tipoRadio = 'Apartamento';
+    const p = document.createElement('p');
+    p.innerHTML = `<span class ="green">&check;</span>&nbsp;<b>TIPO:</b> ${tipoRadio}`;
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
     return true;
   } else {
     const p = document.createElement('p');
@@ -116,6 +132,10 @@ function checkRadio() {
 
 function checkResume() {
   if (resume.value.length > 0 && resume.value.length <= 1000) {
+    const p = document.createElement('p');
+    p.innerHTML = `<span class ="green">&check;</span>&nbsp;<b>RESUME:</b> ${resume.value}`;
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
     return true;
   } else {
     const p = document.createElement('p');
@@ -129,6 +149,10 @@ function checkResume() {
 
 function checkJobPosition() {
   if (jobPosition.value.length > 0 && jobPosition.value.length <= 40) {
+    const p = document.createElement('p');
+    p.innerHTML = `<span class ="green">&check;</span>&nbsp;<b>CARGO:</b> ${jobPosition.value}`;
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
     return true;
   } else {
     const p = document.createElement('p');
@@ -140,8 +164,12 @@ function checkJobPosition() {
   }
 }
 
-function checkJobPosition() {
+function checkJobDescription() {
   if (jobDescription.value.length > 0 && jobDescription.value.length <= 500) {
+    const p = document.createElement('p');
+    p.innerHTML = `<span class ="green">&check;</span>&nbsp;<b>DESCRIÇÃO DO CARGO:</b> ${jobDescription.value}`;
+    const divResult = document.getElementById('div-result');
+    divResult.appendChild(p);
     return true;
   } else {
     const p = document.createElement('p');
@@ -201,9 +229,12 @@ function checkDateYear() {
 
 function checkStartDate() {
   if (checkSlash() === true) {
-    checkDateDay();
-    checkDateMonth();
-    checkDateYear();
+    if (checkDateDay() && checkDateMonth() && checkDateYear()) {
+      const p = document.createElement('p');
+      p.innerHTML = `<span class ="green">&check;</span>&nbsp;<b>DATA DE INÍCIO:</b> ${startDate.value}`;
+      const divResult = document.getElementById('div-result');
+      divResult.appendChild(p);
+    }
   }
 }
 
@@ -220,5 +251,24 @@ btnSubmit.addEventListener('click', function (e) {
   checkRadio();
   checkResume();
   checkJobPosition();
+  checkJobDescription();
   checkStartDate();
+});
+
+btnClean.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  name.value = '';
+  email.value = '';
+  cpf.value = '';
+  adress.value = '';
+  city.value = '';
+  tipoCasa.checked = false;
+  tipoApartamento.checked = false;
+  resume.value = '';
+  jobPosition.value = '';
+  jobDescription.value = '';
+  startDate.value = '';
+
+  div.remove();
 });
