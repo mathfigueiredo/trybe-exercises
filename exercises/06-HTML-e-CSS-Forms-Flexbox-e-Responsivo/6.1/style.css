@@ -12,6 +12,11 @@ fieldset {
   margin-bottom: 20px;
 }
 
+span {
+  color: red;
+  font-weight: bold;
+}
+
 #input-tipo-casa,
 #input-tipo-apartamento {
   display: inline;
