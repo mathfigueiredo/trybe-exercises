@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+body {
+  margin: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.title-par {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.navigation__items {
+  font-size: 2rem;
+}
+
+.container-asides {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 26%;
+  margin-top: 10px;
+}
+
+.container-page {
+  display: flex;
+  align-items: flex-start;
+}
+
+.aside-one {
+  order: 1;
+}
+
+.aside-two {
+  order: 2;
+}
+
+.main-content {
+  order: 3;
+  flex-basis: 70%;
+  padding: 0 20px;
+}
+
+.aside--heading {
+  text-align: center;
+}
+
+.aside--ul {
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.aside--ul li {
+  margin-bottom: 4px;
+}
+
+.title--h1 {
+  text-align: center;
+}
+
+.main-content p {
+  font-size: 1.6rem;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer--heading {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 740px) {
+  html {
+    font-size: 68%;
+  }
+  .container-page {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .container-asides {
+    order: 2;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: space-evenly;
+  }
+
+  .main-content {
+    order: 1;
+  }
+
+  .footer {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  html {
+    font-size: 70%;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .container-asides {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside--ul li {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+  }
+}
