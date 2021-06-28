@@ -1,0 +1,58 @@
+/*
+===================
+= HEADER
+===================
+*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+}
+
+#trybewarts-header-title {
+  align-self: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.trybewarts-login > * {
+  margin-bottom: 5px;
+}
+
+#btn-login {
+  align-self: flex-start;
+}
+
+/*
+===================
+= MAIN
+===================
+*/
+
+.main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#evaluation-form > * {
+  margin-bottom: 10px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#submit-btn {
+  align-self: flex-start;
+}
