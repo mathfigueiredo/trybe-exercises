@@ -64,3 +64,12 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+function longestNamedBook() {
+  const longest = books.reduce(
+    (acc, cur) => (acc = cur.name.length > acc.length ? cur.name : acc),
+    books[0].name
+  );
+  return longest;
+}
+
+assert.deepStrictEqual(longestNamedBook(), 'As Crônicas de Gelo e Fogo');
