@@ -64,3 +64,19 @@ const books = [
     releaseYear: 1928,
   },
 ];
+
+// 7
+const expectedResult = false;
+
+function authorUnique() {
+  const sorted = books.sort((a, b) => a.author.birthYear - b.author.birthYear);
+
+  for (let i = 1; i < sorted.length; i++) {
+    if (sorted[i].author.birthYear === sorted[i - 1].author.birthYear)
+      return false;
+  }
+
+  return true;
+}
+
+assert.strictEqual(authorUnique(), expectedResult);
