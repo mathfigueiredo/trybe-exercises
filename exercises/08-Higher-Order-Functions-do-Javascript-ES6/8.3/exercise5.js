@@ -64,3 +64,20 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+const expectedResult = [
+  'Frank Herbert',
+  'George R. R. Martin',
+  'Isaac Asimov',
+  'J. R. R. Tolkien',
+];
+
+function fantasyOrScienceFictionAuthors() {
+  const filtered = books.filter(
+    (x) => x.genre === 'Fantasia' || x.genre === 'Ficção Científica'
+  );
+  const nameFiltered = filtered.map((x) => x.author.name);
+  const sorted = nameFiltered.sort();
+  return sorted;
+}
+
+assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
