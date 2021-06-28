@@ -64,3 +64,12 @@ const books = [
     releaseYear: 1928,
   },
 ];
+
+// 5
+const expectedResult = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every((x) => x.author.birthYear >= 1901);
+}
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult);
