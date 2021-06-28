@@ -64,3 +64,12 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  const filtered = books.filter((x) => x.author.name.split('.').length === 4);
+  const name = filtered[0].name;
+  return name;
+}
+
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
