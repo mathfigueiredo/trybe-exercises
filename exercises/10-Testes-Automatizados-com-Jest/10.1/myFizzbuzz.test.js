@@ -11,3 +11,7 @@ test('Verifica se myFizzBuzz(9) retorna "fizz"', () => {
 test('Verifica se myFizzBuzz(11) retorna 11', () => {
   expect(myFizzBuzz(11)).toBe(11);
 });
+
+test('Verifica se myFizzBuzz("string") retorna false', () => {
+  expect(myFizzBuzz('string')).toBe(false);
+});
