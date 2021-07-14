@@ -7,3 +7,7 @@ test('Verifica se myFizzBuzz(15) retorna "fizzbuzz"', () => {
 test('Verifica se myFizzBuzz(9) retorna "fizz"', () => {
   expect(myFizzBuzz(9)).toBe('fizz');
 });
+
+test('Verifica se myFizzBuzz(25) retorna "buzz"', () => {
+  expect(myFizzBuzz(25)).toBe('buzz');
+});
