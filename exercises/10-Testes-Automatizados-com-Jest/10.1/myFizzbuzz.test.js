@@ -8,6 +8,6 @@ test('Verifica se myFizzBuzz(9) retorna "fizz"', () => {
   expect(myFizzBuzz(9)).toBe('fizz');
 });
 
-test('Verifica se myFizzBuzz(25) retorna "buzz"', () => {
-  expect(myFizzBuzz(25)).toBe('buzz');
+test('Verifica se myFizzBuzz(11) retorna 11', () => {
+  expect(myFizzBuzz(11)).toBe(11);
 });
