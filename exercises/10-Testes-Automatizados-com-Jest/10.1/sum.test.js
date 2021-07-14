@@ -11,5 +11,11 @@ test('sums 0 and 0', () => {
 test('sums 4 and "5"', () => {
   expect(() => {
     sum(4, '5');
+  }).toThrow();
+});
+
+test('sums 4 and "5"', () => {
+  expect(() => {
+    sum(4, '5');
   }).toThrow('parameters must be numbers');
 });
