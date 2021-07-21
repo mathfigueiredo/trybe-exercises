@@ -1,0 +1,32 @@
+.pokemoneach {
+  display: flex;
+  align-items: center;
+  background-color: rgb(237, 237, 237);
+  margin: 5px;
+  border-radius: 5px;
+  min-width: 250px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.pokenumber,
+.pokename,
+.type,
+.weight,
+.info {
+  display: block;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover,
+a:active {
+  color: blue;
+}
