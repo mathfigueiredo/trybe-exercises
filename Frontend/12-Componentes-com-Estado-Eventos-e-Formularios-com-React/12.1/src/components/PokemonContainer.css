@@ -1,0 +1,43 @@
+.wrapdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemoncontainer {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.lilcontainer {
+  max-width: 1100px;
+}
+
+.bigcontainer {
+  max-width: 800px;
+}
+
+.nextbtn {
+  margin-top: 10px;
+  width: 130px;
+  height: 40px;
+
+  border: none;
+  background-color: rgb(146, 146, 255);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.nextbtn:hover {
+  cursor: pointer;
+  background-color: rgb(46, 46, 221);
+  transform: translateX(-2px) translateY(-2px);
+  box-shadow: 2px 2px 10px rgb(133, 133, 218);
+}
+
+.nextbtn:active {
+  transform: translateX(0) translateY(0);
+  box-shadow: none;
+}

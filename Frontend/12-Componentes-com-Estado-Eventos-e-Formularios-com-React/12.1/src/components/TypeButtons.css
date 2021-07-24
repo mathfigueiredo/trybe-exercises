@@ -1,0 +1,58 @@
+.typebtn {
+  margin: 0 6px;
+  width: 100px;
+  height: 40px;
+
+  border: none;
+  font-weight: bold;
+
+  transition: all 0.3s;
+}
+
+.typebtn:hover {
+  cursor: pointer;
+  transform: translateX(-2px) translateY(-2px);
+  box-shadow: 2px 2px 10px rgb(196, 196, 196);
+}
+
+.typebtn:active {
+  transform: translateX(0) translateY(0);
+  box-shadow: none;
+}
+
+.Show {
+  background-color: black;
+  color: aliceblue;
+}
+
+.Bug {
+  background-color: rgb(42, 233, 17);
+}
+
+.Dragon {
+  background-color: rgb(168, 230, 168);
+}
+
+.Electric {
+  background-color: yellow;
+}
+
+.Fire {
+  background-color: orangered;
+}
+
+.Normal {
+  background-color: bisque;
+}
+
+.Poison {
+  background-color: rgb(219, 15, 219);
+}
+
+.Psychic {
+  background-color: rgb(230, 124, 200);
+}
+
+/*
+https://github.com/duiker101/pokemon-type-svg-icons
+*/
