@@ -25,7 +25,19 @@ class Form extends React.Component {
 
   inputChange(e) {
     let { name, value } = e.target;
-    value = name === 'name' ? value.toUpperCase() : value;
+    // value = name === 'name' ? value.toUpperCase() : value;
+
+    switch (name) {
+      case 'name':
+        value = value.toUpperCase();
+        break;
+      case 'address':
+        value = value.replace(/[^a-zA-Z0-9,.ãÃáÁêÊéÉèÈíÍóÓôÔõÕúÚçÇ ]/g, '');
+        break;
+      default:
+        break;
+    }
+
     this.setState({
       [name]: value,
     });

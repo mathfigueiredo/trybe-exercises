@@ -19,10 +19,9 @@ class StateSelect extends React.Component {
             id="state"
             onChange={this.props.inputChange}
             value={this.props.value}
+            required
           >
             {this.renderStates()}
-            {/* <option value="Exemplo1">Exemplo1</option>
-            <option value="Exemplo2">Exemplo2</option> */}
           </select>
         </label>
       </div>
