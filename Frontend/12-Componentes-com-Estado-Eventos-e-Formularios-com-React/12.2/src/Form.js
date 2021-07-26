@@ -24,7 +24,8 @@ class Form extends React.Component {
   }
 
   inputChange(e) {
-    const { name, value } = e.target;
+    let { name, value } = e.target;
+    value = name === 'name' ? value.toUpperCase() : value;
     this.setState({
       [name]: value,
     });
