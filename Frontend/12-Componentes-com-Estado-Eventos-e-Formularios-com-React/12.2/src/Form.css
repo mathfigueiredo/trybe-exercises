@@ -1,10 +1,11 @@
-.label {
+.spanlabel {
   display: inline-block;
   width: 80px;
 }
 
 .inputdiv {
   margin-bottom: 10px;
+  width: 280px;
 }
 
 input {

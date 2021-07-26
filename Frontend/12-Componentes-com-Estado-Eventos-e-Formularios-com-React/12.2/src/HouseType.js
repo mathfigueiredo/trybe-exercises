@@ -4,16 +4,27 @@ class HouseType extends React.Component {
   render() {
     return (
       <div className="inputdiv">
-        <label className="label">Tipo: </label>
-        <input type="radio" id="house" name="housetype" value="house" />
-        <label for="house">Casa</label>
+        <label className="label">
+          <span className="spanlabel">Tipo: </span>
+        </label>
+        <input
+          type="radio"
+          id="house"
+          name="housetype"
+          value="house"
+          onChange={this.props.inputChange}
+          checked={this.props.checked === 'house'}
+        />
+        <label htmlFor="house">Casa</label>
         <input
           type="radio"
           id="appartment"
           name="housetype"
           value="appartment"
+          onChange={this.props.inputChange}
+          checked={this.props.checked === 'appartment'}
         />
-        <label for="appartment">Apartamento</label>
+        <label htmlFor="appartment">Apartamento</label>
       </div>
     );
   }
