@@ -64,6 +64,10 @@ class Form extends React.Component {
           <StateSelect value={this.state.state} inputChange={this.inputChange} />
           <HouseType checked={this.state.housetype} inputChange={this.inputChange} />
         </fieldset>
+
+        <fieldset>
+            
+        </fieldset>
       </form>
     );
   }
