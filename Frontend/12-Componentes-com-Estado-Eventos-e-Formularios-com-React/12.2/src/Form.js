@@ -13,6 +13,7 @@ class Form extends React.Component {
     super();
 
     this.inputChange = this.inputChange.bind(this);
+    this.checkCityName = this.checkCityName.bind(this);
 
     this.state = {
       name: '',
@@ -45,6 +46,11 @@ class Form extends React.Component {
     });
   }
 
+  checkCityName() {
+    const firstLetter = this.state.city[0];
+    if (!isNaN(Number(firstLetter))) this.setState({ city: '' });
+  }
+
   render() {
     return (
       <form>
@@ -53,7 +59,8 @@ class Form extends React.Component {
           <EmailInput value={this.state.email} inputChange={this.inputChange} />
           <CpfInput value={this.state.cpf} inputChange={this.inputChange} />
           <AddressInput value={this.state.address} inputChange={this.inputChange} />
-          <City value={this.state.city} inputChange={this.inputChange} />
+          {/* prettier-ignore */}
+          <City value={this.state.city} inputChange={this.inputChange} onBlur={this.checkCityName}/>
           <StateSelect value={this.state.state} inputChange={this.inputChange} />
           <HouseType checked={this.state.housetype} inputChange={this.inputChange} />
         </fieldset>

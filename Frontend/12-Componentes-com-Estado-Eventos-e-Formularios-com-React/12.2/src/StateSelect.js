@@ -5,7 +5,11 @@ const statesShort = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS'
 class StateSelect extends React.Component {
   renderStates() {
     return statesShort.map((x) => {
-      return <option value={x}>{x}</option>;
+      return (
+        <option key={x} value={x}>
+          {x}
+        </option>
+      );
     });
   }
 
