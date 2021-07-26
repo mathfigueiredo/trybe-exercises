@@ -3,6 +3,7 @@ import NameInput from './NameInput';
 import EmailInput from './EmailInput';
 import CpfInput from './CpfInput';
 import AddressInput from './AddressInput';
+import City from './City';
 import StateSelect from './StateSelect';
 import HouseType from './HouseType';
 import './Form.css';
@@ -18,6 +19,7 @@ class Form extends React.Component {
       email: '',
       cpf: '',
       address: '',
+      city: '',
       state: 'AC',
       housetype: '',
     };
@@ -51,6 +53,7 @@ class Form extends React.Component {
           <EmailInput value={this.state.email} inputChange={this.inputChange} />
           <CpfInput value={this.state.cpf} inputChange={this.inputChange} />
           <AddressInput value={this.state.address} inputChange={this.inputChange} />
+          <City value={this.state.city} inputChange={this.inputChange} />
           <StateSelect value={this.state.state} inputChange={this.inputChange} />
           <HouseType checked={this.state.housetype} inputChange={this.inputChange} />
         </fieldset>
