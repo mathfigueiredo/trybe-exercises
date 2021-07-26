@@ -5,6 +5,7 @@ import CpfInput from './CpfInput';
 import AddressInput from './AddressInput';
 import StateSelect from './StateSelect';
 import HouseType from './HouseType';
+import './Form.css';
 
 class Form extends React.Component {
   render() {
