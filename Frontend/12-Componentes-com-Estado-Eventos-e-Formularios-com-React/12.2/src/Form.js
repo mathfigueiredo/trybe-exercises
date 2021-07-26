@@ -18,7 +18,7 @@ class Form extends React.Component {
       email: '',
       cpf: '',
       address: '',
-      state: 'Exemplo1',
+      state: 'AC',
       housetype: '',
     };
   }
